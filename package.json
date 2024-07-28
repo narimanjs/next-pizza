@@ -6,9 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:reset": "prisma migrate reset",
+    "prisma:push": "prisma db push",
+    "prisma:preview": "prisma db pull",
+    "prisma:seed": "prisma db seed"
   },
   "dependencies": {
+    "@prisma/client": "^5.17.0",
     "@radix-ui/react-checkbox": "^1.1.1",
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-popover": "^1.1.1",
@@ -19,12 +27,14 @@
     "clsx": "^2.1.1",
     "lucide-react": "^0.414.0",
     "next": "14.2.5",
+    "prisma": "^5.17.0",
     "react": "^18",
     "react-dom": "^18",
     "react-use": "^17.5.1",
     "tailwind-merge": "^2.4.0",
     "tailwindcss-animate": "^1.0.7",
-    "vaul": "^0.9.1"
+    "vaul": "^0.9.1",
+    "zustand": "^4.5.4"
   },
   "devDependencies": {
     "@types/node": "^20",

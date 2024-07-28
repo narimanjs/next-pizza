@@ -45,11 +45,11 @@ export const ProductCard: React.FC<Props> = ({
 
         <div className='flex justify-between items-center mt-4'>
           <span className='text-[20px]'>
-            from <b>20$</b>
+            from <b>10$</b>
           </span>
 
           <Button
-            variant='secondary'
+            variant='outline'
             className='text-base font-bold'
           >
             <Plus
